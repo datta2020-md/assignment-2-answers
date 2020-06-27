@@ -1,0 +1,55 @@
+     
+
+                                   Module 3
+        
+                               Python Assignment
+
+
+                                                         Datta M Pavan
+                                                         321910302020
+
+
+1.   Write a python program to calculate the length of a string.
+Ans: def string_length(str1):
+     count = 0
+     for char in str1:
+     count += 1
+     return count
+     print(string_length('harshith'))
+
+2.   Write a python program to count the number of charters (character frequency in string). 
+Ans: def char_frequency(str1):
+     dict = {}
+     for n in str1:
+     keys = dict.keys()
+     if n in keys:
+     dict[n] += 1
+     else:
+     dict[n] = 1
+     return dict
+     print(char_frequency('google.com')) 
+
+3.   Write a python program to get a single string from two given string. 
+Ans: def chars_mix_up(a, b):
+     new_a = b[:2] + a[2:]
+     new_b = a[:2] + b[2:]
+
+     return new_a + ' ' + new_b
+     print(chars_mix_up('abc', 'xyz'))
+
+4.   Write a python program to convert string in a list. 
+Ans: str1 = "The quick brown fox jumps over the lazy dog."
+     print(str1.split(' '))
+     str1 = "The-quick-brown-fox-jumps-over-the-lazy-dog."
+     print(str1.split('-'))
+
+5.   Write a Python program to remove the characters which have odd index values of a given string.  
+Ans: def odd_values_string(str):
+     result = "" 
+     for i in range(len(str)):
+     if i % 2 == 0:
+     result = result + str[i]
+     return result
+
+     print(odd_values_string('abcdef'))
+     print(odd_values_string('python'))
